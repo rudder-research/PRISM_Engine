@@ -1,0 +1,15 @@
+This PR adds a complete `.gitignore` tailored for the PRISM_Engine project.
+
+Purpose:
+- Prevent large datasets, temporary files, and machine-specific junk from being committed
+- Keep repository size small and structure clean
+- Protect accidental uploads of environments, logs, and checkpoints
+
+Key exclusions:
+- Raw and normalized data folders (except README placeholders)
+- Python cache files
+- Jupyter notebook checkpoints
+- Local environment directories (.env, env/, .venv)
+- OS-generated junk files
+- Zip archives, logs, and temporary scratch files
+- IDE-specific folders (VS Code, JetBrains)
